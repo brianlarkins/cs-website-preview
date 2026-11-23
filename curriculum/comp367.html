@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>COMP367/MATH367: Programs and proofs with dependent types | Rhodes College Computer Science</title>
+  <meta content="Computer science at Rhodes College in Memphis, Tennessee: a rigorous, project-based curriculum in a liberal arts setting, with faculty who teach and do research alongside undergraduates." name="description">
+  <meta content="" name="keywords">
+  
+  <!-- relative includes for jekyll -->
+  
+
+
+
+
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon-cs.png" rel="icon">
+  <link href="../assets/img/favicon-cs.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <!--<h1 class="logo mr-auto"><a href="index.html">Rhodes CS</a></h1>-->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      
+      <div class="logo me-auto">
+      	<a href="../index.html">
+      		<h1 class="logo" style="font-size: 75%">Rhodes College</h1>
+      		<h1 class="logo" style="font-size: 125%; white-space: nowrap;">Computer Science</h1>
+        </a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+
+				<ul>
+					<li class="dropdown">
+<a href="#"><span>Curriculum</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a href="../curriculum/overview.html">Overview</a></li>
+							<li><a href="../curriculum/major-and-minor.html">The Major and Minor</a></li>
+							<li><a href="../curriculum/courses.html">Course Descriptions</a></li>
+							<li><a href="../curriculum/plans.html">Sample Four-Year Plans</a></li>
+							<li><a href="../curriculum/internships.html">Internships</a></li>
+							<li><a href="../curriculum/study-abroad.html">Study Abroad</a></li>
+							<li><a href="../curriculum/maymesters.html">Maymesters</a></li>
+							<li class="divider"><a href="#"></a></li>
+							<li><a href="../curriculum/spring-2027-schedule.html">Spring 2027 Schedule</a></li>
+							<li><a href="../curriculum/fall-2026-schedule.html">Fall 2026 Schedule</a></li>
+							<li><a href="../curriculum/spring-2026-schedule.html">Spring 2026 Schedule</a></li>
+						</ul>
+					</li>
+					
+					<!--<li class="dropdown"><a href="#"><span>People</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a href="../people/faculty.html">Faculty</a></li>
+							<li><a href="../people/alumni.html">Alumni</a></li>
+						</ul>
+					</li> bring this back once we build alumni page?--> 
+					
+					<li><a href="../people/faculty.html">Faculty</a></li>
+
+					<li><a href="../research/">Research</a></li>
+					
+					<!--<li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a href="../research/faculty-research.html">Student Research</a></li>
+							<li><a href="../research/student-research.html">Faculty Research</a></li>
+							<li><a href="../research/getting-involved.html">Getting Involved</a></li>
+						</ul>
+					</li>-->
+					
+					<li class="dropdown">
+<a href="#"><span>Community</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a href="../community/diversity-and-inclusion.html">Diversity and Inclusion</a></li>
+							<li><a href="../community/clubs.html">Clubs and Student Groups</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown">
+<a href="#"><span>Resources</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a href="../resources/tutoring-hours.html">Tutoring Hours</a></li>
+							<li><a href="../resources/computing-resources.html">Computing Resources</a></li>
+							<!--<li><a href="../resources/career-planning.html">Career Planning</a></li>
+							<li><a href="../resources/student-handbook.html">Student Handbook</a></li>
+							<li><a href="../resources/advising-handbook.html">Advising Handbook</a></li>
+							<li><a href="../resources/tutoring-handbook.html">Tutoring Handbook</a></li> -->
+						</ul>
+					</li>
+					
+				</ul>
+				
+				<i class="bi bi-list mobile-nav-toggle"></i>       
+
+      </nav><!-- .navbar -->
+
+      <!--<a href="index.html" class="get-started-btn ml-auto">Get Started</a>-->
+
+    </div>
+  </header><!-- End Header -->
+  
+  
+  <section>
+  	
+  	<div class="title-shaded">
+  		<div class="container">
+		  	<h1>COMP367/MATH367: Programs and proofs with dependent types</h1>
+		  </div>
+		</div>
+  	
+  	
+  	<div class="container">
+
+  	<style>
+	i[class^="ri-"] { 
+	color: #d9232d; 
+	font-size: 24px; 
+	vertical-align: sub; 
+	/*padding-left: .2em; */
+	padding-right: .2em 
+}	
+</style>
+
+<p>This page is a long-form course description, using a Q&amp;A format.</p>
+
+<p><strong>What will this course be like?</strong></p>
+
+<p>We’ll learn how to write programs in a language called <a href="https://agda.readthedocs.io/en/latest/getting-started/what-is-agda.html">Agda</a>, which is a “dependently typed” functional programming language. Agda is used for two main purposes: (1) writing verified computer programs, and (2) writing formal mathematical proofs.</p>
+
+<p>A “verified” computer program is a program that carries with it a proof of correctness. You can think of this as an alternative to traditional unit testing–instead of testing that your program passes certain tests, in Agda you can prove that your program is correct. Your proof is not separate from your code; it is part of it, and the compiler checks your proof as part of the process of compiling your code.</p>
+
+<p>A “formal” mathematical proof is a proof written in a formal language (in our case, as Agda code). You can express any mathematical definition or theorem statement as an Agda type, and you can write a proof of a theorem as Agda code. In contrast to informal (written) mathematical proofs which may contain errors, an Agda proof can be checked by running the Agda type-checker, so we can be confident of its correctness.</p>
+
+<p>The main goals of the course are to learn how to write both verified computer programs and formal mathematical proofs in Agda, and to understand how this all works.</p>
+
+<p>In terms of the structure of the class, the work will be centered around programming projects, along with some written homework assignments. Towards the end of the semester, we’ll likely have a final programming project where you’ll get to choose a topic. We’ll likely have at least one midterm exam and possibly also a final exam.</p>
+
+<p><strong>What are some major successes using Agda or similar languages?</strong></p>
+
+<p>For a CS example, the <a href="https://compcert.org/">CompCert</a> C compiler is a certified C compiler. It compiles C code to machine language, and comes along with a proof that the compiler preserves the behavior of your code, according to the C language specification and the processor specification.</p>
+
+<p>For a math example, the <a href="https://en.wikipedia.org/wiki/Kepler_conjecture">Kepler conjecture</a> was a 17th-century conjecture that the most space-efficient way to pack spheres is using a triangular pyramid pattern. This was proved in 1998 by Thomas Hales, but his proof was disputed by the mathematical community, as the details were hard to verify. In 2014, Hales and collaborators produced a computer-checked proof.</p>
+
+<p><strong>What is the Agda language like?</strong></p>
+
+<p>Agda is very different than most mainstream programming languages (e.g., Python, Java, C). Like these languages, Agda has expressions that are evaluated (e.g., 1 + 2 evaluates to 3). Unlike these languages, Agda has no statements that are executed; in particular, there are no if-statements or loops. Instead of if-statements, you use “pattern matching,” and instead of loops, you use recursion. There are no objects or methods.</p>
+
+<p>All of the above could be said not only about Agda but any functional programming language (e.g., ML or Haskell). Agda’s unique feature is its type system, which allow “dependent types.” This means that types can depend on values, for example, you can define a type “List Int n” which represents a list with n elements–this is not possible in most languages, which have a strict separation between types and terms. Agda’s type system is really what allows Agda to be used for writing verified software or formal proofs.</p>
+
+<p>From a math perspective, you might be wondering how writing a proof in Agda compares to writing a proof on paper. It’s similar, in that the same proof ideas still apply–you can use cases, or induction, or use one theorem to prove another. It’s different in that you can’t skip details, since Agda must be able to check your proof. It’s also different in that Agda uses what’s called constructive logic by default, which means you can’t use a proof by contradiction unless you enable it using an axiom.</p>
+
+<p><strong>What’s the practical benefit of taking this course?</strong></p>
+
+<p>If you’re a CS student, you’ll learn how to write verified software. Proving correctness of code is not common in industry now, but there’s a good chance it will become more common, and then you’ll have an advantage. More immediately, learning to program in a language like Agda will make you a better programmer in more mainstream languages, which are increasingly adding features inspired by functional &amp; dependently typed languages.</p>
+
+<p>If you’re a math student, you’ll learn how to use a computer system to write proofs, which may be helpful, especially if you’re doing math research. Also, likely, the proofs you’ve written up to this point have used “classical logic,” and you might also be familiar with set theory as a foundation for math. In Agda you’ll be working in a system based on type theory rather than set theory, and you’ll be working with constructive rather than classical logic. This course will give you an opportunity to think about and understand the foundations of math, and also to recognize the tradeoffs between different logical systems.</p>
+
+<p>In terms of academic requirements, the course counts as an upper-level “applications” elective in CS and an upper-level “proofs” elective in math.</p>
+
+<p><strong>How do I know if I’m a good fit for this course?</strong></p>
+
+<p>The prerequisites for the course are COMP142 &amp; COMP172/MATH201, but essentially, you should have some experience with writing programs and some experience with writing proofs. If you do, and if you like thinking about how programming languages work or about why mathematical theorems are true, then you will enjoy this class.</p>
+
+<p>Agda is very different from languages we teach in our introductory CS sequence, so we’ll be starting from the very basics. In some ways, it will feel like learning programming for the first time again, and you’ll be learning alongside other students who are in the same position. Please reach out to me (Dr. Superdock) if you have questions!</p>
+
+
+  	
+  	</div>
+  
+  </section>
+  
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-7 col-md-6">
+            <div class="footer-info">
+              <h3>Rhodes College<br>Department of Computer Science</h3>
+              <p>
+                Briggs Hall<br>
+                2000 North Parkway<br>
+                Memphis, TN 38112<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-6 footer-links">
+            <p>
+              	For computer science inquiries, please contact<br>
+              	Dr. Brian Larkins, Chair of Computer Science:<br>
+              	<a href="mailto:larkinsb@rhodes.edu">larkinsb@rhodes.edu</a>.
+            </p>
+            <p>
+              	For Rhodes College inquiries, please visit<br>
+              	the college website: <a href="http://www.rhodes.edu">www.rhodes.edu</a>.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+<div id="preview-badge" style="position:fixed;left:15px;bottom:15px;z-index:9999;max-width:calc(100% - 85px);background:#3f4953;color:#fff;font:600 12px/1.4 'Open Sans',sans-serif;padding:6px 14px;border-radius:16px;border:1px solid rgba(255,255,255,.4);box-shadow:0 2px 8px rgba(0,0,0,.25)">Preview, not the live site · homepage-refresh @ 4a9db0a · 2026-11-23</div>
+</body>
+
+</html>

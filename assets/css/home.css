@@ -1,0 +1,520 @@
+/*--------------------------------------------------------------
+# Homepage (index.html)
+# Loaded only on pages with `homepage: true` in their front matter.
+# Colors follow style.css: accent #d9232d, slate #556270, dark slate #3f4953.
+--------------------------------------------------------------*/
+.home section {
+  padding: 64px 0;
+}
+
+.home .section-alt {
+  background: #f8f9fa;
+}
+
+.home .section-head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 40px auto;
+}
+
+.home .section-head h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.home .section-head p {
+  color: #5c6670;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* style.css underlines every h2-h6 in a section; keep that for section titles only */
+.home h3, .home h4 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Buttons */
+.btn-home {
+  display: inline-block;
+  padding: 11px 26px;
+  margin: 0 10px 10px 0;
+  border: 2px solid #d9232d;
+  border-radius: 50px;
+  background: #d9232d;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: 0.3s;
+}
+
+.btn-home:hover {
+  background: #e24d55;
+  border-color: #e24d55;
+  color: #fff;
+}
+
+.btn-home.btn-ghost {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-home.btn-ghost:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #3f4953;
+}
+
+/* Hero: text on slate, with the hero_photos frame beside it */
+.home .home-hero {
+  padding: 110px 0 150px 0;
+  color: #fff;
+  background-color: #3f4953;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(135deg, #343d46 0%, #556270 65%, #6b7a89 100%);
+  background-size: 22px 22px, cover;
+}
+
+.home-hero .eyebrow {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.home-hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
+  max-width: 780px;
+  margin-bottom: 20px;
+}
+
+.home-hero .lead {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+
+/* Hero photos (front matter: hero_photos): one 4:3 frame; the inline script in
+   index.html moves .active from photo to photo, and opacity fades between them */
+.home-hero .col-lg-6 h1 {
+  font-size: 2.6rem;
+}
+
+.hero-photos {
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+
+.hero-photos img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.hero-photos img.active {
+  opacity: 1;
+}
+
+/* Start-here cards, pulled up over the bottom of the hero */
+.home .start-here {
+  position: relative;
+  z-index: 1;
+  padding-top: 0;
+  overflow: visible; /* style.css clips sections; the cards poke up into the hero */
+}
+
+.start-here .row {
+  margin-top: -90px;
+}
+
+.start-card {
+  height: 100%;
+  padding: 30px 28px 22px 28px;
+  background: #fff;
+  border-top: 4px solid #d9232d;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.start-card .card-icon {
+  font-size: 2rem;
+  color: #d9232d;
+}
+
+.start-card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 10px 0 8px 0;
+}
+
+.start-card p {
+  font-size: 0.95rem;
+}
+
+.start-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.start-card li {
+  border-top: 1px solid #eceff1;
+}
+
+.start-card li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  color: #556270;
+  font-weight: 600;
+}
+
+.start-card li a:hover {
+  color: #d9232d;
+}
+
+.start-card li a i {
+  font-size: 0.8rem;
+}
+
+/* Why CS at Rhodes */
+.feature {
+  display: flex;
+  gap: 16px;
+}
+
+.feature > i {
+  flex-shrink: 0;
+  font-size: 1.75rem;
+  line-height: 1;
+  margin-top: 2px;
+  color: #d9232d;
+}
+
+.feature h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.feature h4 a {
+  color: inherit;
+}
+
+.feature h4 a:hover {
+  color: #d9232d;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Only at Rhodes */
+.distinct-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.distinct-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background: linear-gradient(135deg, #556270, #3f4953);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 3rem;
+}
+
+.distinct-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.distinct-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px 22px 24px 22px;
+}
+
+.distinct-body h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.distinct-body p {
+  font-size: 0.93rem;
+}
+
+.distinct-body .more {
+  margin-top: auto;
+  font-weight: 600;
+}
+
+/* Maymester photo cards (Only at Rhodes) */
+.travel-card {
+  position: relative;
+  display: block;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  color: #fff;
+}
+
+.travel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.travel-card:hover img {
+  transform: scale(1.04);
+}
+
+.travel-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 24, 28, 0) 30%, rgba(20, 24, 28, 0.88) 100%);
+}
+
+.travel-body {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 22px 24px;
+}
+
+.travel-body .tag {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 10px;
+  background: #d9232d;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.travel-body h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.travel-body p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* News */
+.news-item {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e3e6e9;
+}
+
+.news-date {
+  flex: 0 0 62px;
+  align-self: flex-start;
+  padding: 6px 0;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e3e6e9;
+  border-radius: 6px;
+}
+
+.news-date .m {
+  display: block;
+  color: #d9232d;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.news-date .d {
+  display: block;
+  color: #556270;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.news-item h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.news-item h3 a {
+  color: #556270;
+}
+
+.news-item h3 a:hover {
+  color: #d9232d;
+}
+
+.news-item p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.news-all {
+  margin: 18px 0 0 0;
+  text-align: right;
+  font-weight: 600;
+}
+
+/* Outcomes */
+.outcomes h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.outcomes h3 i {
+  color: #d9232d;
+  margin-right: 4px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chips li {
+  padding: 5px 14px;
+  background: #f8f9fa;
+  border: 1px solid #dfe3e7;
+  border-radius: 50px;
+  color: #556270;
+  font-size: 0.9rem;
+}
+
+/* Faculty headshots */
+.faculty-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px 32px;
+}
+
+.faculty-row a {
+  display: block;
+  width: 124px;
+  text-align: center;
+  color: #556270;
+}
+
+.faculty-row img {
+  width: 124px;
+  height: 124px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s;
+}
+
+.faculty-row a:hover img {
+  transform: translateY(-4px);
+}
+
+.faculty-row a:hover {
+  color: #d9232d;
+}
+
+.faculty-row .name {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.faculty-row .role {
+  display: block;
+  color: #6c757d;
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+/* Phones and small tablets */
+@media (max-width: 768px) {
+  .home section {
+    padding: 48px 0;
+  }
+  .home .home-hero {
+    padding: 56px 0 120px 0;
+  }
+  .home-hero h1,
+  .home-hero .col-lg-6 h1 {
+    font-size: 2.1rem;
+  }
+  .travel-card {
+    height: 280px;
+  }
+  .home-hero .lead {
+    font-size: 1.05rem;
+  }
+  .home .section-head h2 {
+    font-size: 1.7rem;
+  }
+  .faculty-row {
+    gap: 22px 18px;
+  }
+  .faculty-row a {
+    width: 100px;
+  }
+  .faculty-row img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-buttons .btn-home {
+    display: block;
+    margin: 0 0 12px 0;
+    text-align: center;
+  }
+}
